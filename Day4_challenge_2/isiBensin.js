@@ -47,7 +47,7 @@
   liter = uang / hargaPerLiter;
   liter = Math.floor(liter * 10) / 10;
 
-  console.log(`Mobil anda telah terisi ${tipeBensin} sebanyak ${liter} lt.`);
+  return `Mobil anda telah terisi ${tipeBensin} sebanyak ${liter} lt.`;
  }
 
- isiBensin(tipeBensin, uang);
+ console.log(isiBensin(tipeBensin, uang));
