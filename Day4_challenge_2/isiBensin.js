@@ -30,7 +30,7 @@
  let uang = 30000 // isi value sesuai keinginanmu
  
  function isiBensin(tipeBensin, uang) {
-  if (!tipeBensin || !uang) {
+  if (tipeBensin !== 'solar' && tipeBensin !== 'pertamax' && tipeBensin !== 'premium' || !uang) {
     return 'Tidak ada tipe bensin dan uang';
   }
   let hargaPerLiter = 0;
