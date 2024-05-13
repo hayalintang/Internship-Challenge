@@ -77,8 +77,8 @@ function peternakan(hewan, jenisKelamin, hari) {
             if (jenisKelamin === 'jantan') {
                 let wol = 0.1 * hari;
                 return `${hewan} ${jenisKelamin} menghasilkan ${wol.toFixed(1)} kg wol setelah ${hari} hari.`
-            } else if (jenisKelamin === 'jantan') {
-                let wol = 0.1 * hari;
+            } else if (jenisKelamin === 'betina') {
+                let wol = 0.15 * hari;
                 return `${hewan} ${jenisKelamin} menghasilkan ${wol.toFixed(1)} kg wol setelah ${hari} hari.`
             }
             break;
