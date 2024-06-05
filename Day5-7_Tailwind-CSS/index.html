@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          darkMode: 'class',
+          theme: {
+            extend: {
+              fontFamily: {
+                'inter': ['Inter']
+              }
+              }
+            }
+          }
+      </script>
+      <style type="text/tailwindcss">
+        #toggle:checked ~ label div.toggle-circle {
+          @apply translate-x-3;
+        }
+      </style>
+</head>
+<body class="dark:bg-blue-950">
+  <div class="flex m-6">
+    <span class="text-sm text-slate-500 mr-2">Light</span>
+    <input type="checkbox" id="toggle" class="hidden">
+    <label for="toggle">
+      <div class="w-9 h-5 bg-slate-500 rounded-full flex items-center p-1 cursor-pointer">
+        <div class="w-4 h-4 bg-white rounded-full toggle-circle"></div>
+      </div>
+    </label>
+    <span class="text-sm text-slate-500 ml-2">Dark</span>
+  </div>
+    <section class= "m-6 p-4 font-inter bg-pink-500 rounded-lg dark:bg-slate-800">
+        <h2 class="dark:text-slate-300 m-4 text-4xl font-bold text-white">Belajar Typography menggunakan TailwindCSS</h2>
+        <div class="dark:text-slate-300 m-4 text-lg text-white">By: Haya Lintang, 8 Mei 2024</div>
+        <p class="dark:text-slate-300 m-4 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque totam iusto assumenda accusantium accusamus ab quo sequi, alias distinctio in debitis dolor nulla quibusdam amet aliquid iure ducimus sit! Facere commodi eligendi aspernatur necessitatibus suscipit, velit consequuntur pariatur dolore harum voluptas. Corrupti dignissimos laborum molestiae culpa provident. Deleniti, praesentium illum!</p>
+        <p class="dark:text-slate-300 m-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloremque eius eveniet autem! Numquam, assumenda illum? Voluptas explicabo numquam voluptate ipsam repudiandae unde, placeat odio aut sed commodi consectetur reprehenderit dolor maxime magni amet ipsum. Velit repellat maiores harum explicabo deserunt dolor saepe sit quibusdam exercitationem inventore, earum incidunt praesentium.</p>
+        <blockquote class="dark:text-slate-300 m-4 italic font-thin text-xl text-white">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. In hic libero recusandae nihil maiores quam."</blockquote>
+        <p class="dark:text-slate-300 m-4 text-white">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid doloremque eius eveniet autem! Numquam, assumenda illum? Voluptas explicabo numquam voluptate ipsam repudiandae unde, placeat odio aut sed commodi consectetur reprehenderit dolor maxime magni amet ipsum. Velit repellat maiores harum explicabo deserunt dolor saepe sit quibusdam exercitationem inventore, earum incidunt praesentium.</p>
+        <button class="dark:text-slate-800 dark:hover:bg-slate-400 m-4 p-2 text-pink-500 bg-white hover:bg-pink-200 rounded-md">Read More</button>
+    </section>
+
+    <div class="dark:bg-slate-800 dark:shadow-slate-500 mx-auto my-10 max-w-xl h-96 bg-pink-100 bg-contain bg-center bg-no-repeat rounded-2xl shadow-lg shadow-pink-950" style="background-image: url(./img/pic2.jpeg);"></div>
+
+    <div class="mx-auto my-10 max-w-xl h-96 rounded-2xl bg-pink-500 overflow-y-scroll">
+      <p class="dark:text-slate-300 dark:bg-slate-800 p-5 text-lg text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam, porro ab reiciendis laboriosam quibusdam, deserunt eius nobis non omnis veniam corporis aspernatur maiores nemo quas quis dolorum cum autem dicta. Ex qui doloremque quos necessitatibus, quas non nesciunt error alias saepe adipisci quod odio numquam modi itaque reprehenderit repellendus eveniet est placeat rem magnam inventore voluptate aspernatur? Quasi culpa excepturi, libero fugit perferendis molestiae! Rerum hic vero maiores harum amet aperiam magni nostrum delectus exercitationem. Tempora eveniet minus sint reiciendis quis vitae error dolorum amet dolores sit ipsum voluptatem temporibus optio nisi magni architecto ipsa, possimus, eius quasi quas iusto sed cum? Pariatur quod suscipit doloribus odio facilis velit est quia voluptate soluta doloremque, labore beatae mollitia rerum distinctio nemo blanditiis, non natus. A, animi? Asperiores consectetur facilis laboriosam quia quis voluptas quisquam itaque laborum totam reprehenderit, dignissimos, corporis impedit quas qui voluptate cumque commodi officiis adipisci. Quam repudiandae id fugiat labore non. Minus quibusdam deleniti, quaerat odit error praesentium vitae impedit quam. Ratione temporibus incidunt quidem animi amet nisi sunt soluta aliquid, iure culpa id, eum impedit nulla, dolorem vero! Delectus, pariatur! Sequi laborum porro perferendis facilis totam iure dolorem quis labore, nulla rem ipsum autem nam neque?</p>
+    </div>
+
+    <div class="dark:border-slate-400 dark:hover:bg-slate-800 max-w-xl my-10 border border-pink-300 rounded-xl mx-auto p-5 shadow-lg font-serif hover:bg-pink-200 group">
+      <h5 class="dark:text-slate-300 font-bold text-pink-800 text-2xl mb-3 underline">Notes: </h5>
+      <p class=" dark:text-slate-300 dark:selection:bg-slate-700 dark:selection:text-slate-300 text-justify text-pink-800 selection:bg-pink-100 selection:text-pink-800 first-line:uppercase first-letter:text-7xl first-letter:float-left first-letter:mr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam suscipit debitis, voluptate eum consequuntur, incidunt ab minus nihil non cum reiciendis, reprehenderit quasi similique tempora sapiente facilis tempore blanditiis earum nobis ipsum repellendus doloremque. Corporis odio debitis ducimus libero a, vero perferendis quas, ad earum accusantium ut illum, fuga fugit.</p>
+    </div>
+
+    <div class="dark:border-slate-400 max-w-xl my-10 border border-pink-500 rounded-xl mx-auto p-4 shadow-md">
+      <form action="">
+        <label for="email">
+          <span class="dark:text-slate-300 block font-semibold mb-2 text-pink-800 after:content-['*'] after:ml-0.5 after:text-red-500">Email</span>
+          <input type="email" id="email" placeholder="Masukan email" class="dark:placeholder:text-slate-400 peer px-3 py-2 border shadow-md rounded w-full block text-sm placeholder:text-pink-300 focus:outline-none focus:ring-1 dark:focus:ring-slate-400 dark:focus:border-slate-400 focus:ring-pink-500 focus:border-pink-500 invalid:text-red-700 invalid:focus:ring-red-700 invalid:focus:border-red-700">
+          <p class="text-sm mt-1 text-red-700 invisible peer-invalid:visible">Email tidak valid</p>
+        </label>
+      </form>
+    </div>
+
+    <hr class="my-40 border-t-4"/>
+    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg hover:scale-125 hover:rotate-45 hover:bg-pink-300 transition"></div>
+
+    <div class="mt-20 w-40 h-40 bg-pink-500 mx-auto shadow-lg group">
+      <div class="w-full h-full bg-pink-300 rounded-lg shadow-lg group-hover:rotate-180 origin-top-left transition duration-1000"></div>
+    </div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-full shadow-lg mt-20 animate-bounce"></div>
+
+    <hr class="my-40 border-t-4"/>
+
+    <div class="container px-8 mx-auto">
+      <div class="dark:bg-slate-800 border rounded-lg shadow-lg p-10 relative">
+        <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2"><span class="m-auto text-xl">📌</span></div>
+        <img src="img/pic1.jpeg" alt="buku" width="200" class="float-left mr-3">
+        <p class="dark:text-slate-300 text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio quos debitis, rerum porro ipsa blanditiis odit fuga magnam, exercitationem officia consequuntur! Dicta ducimus doloribus similique facilis tempora, molestiae delectus at id fugit repellendus assumenda exercitationem quod obcaecati quasi laborum atque! Iure, repellendus! Voluptas qui laborum totam praesentium fugit molestias quod soluta animi quidem consequuntur tenetur, id atque nemo eum ratione perspiciatis fuga ea voluptates tempora saepe eaque incidunt magnam aperiam? Quia quae eaque labore dolorem fugiat cupiditate doloremque repellat harum.</p>
+      </div>
+
+      
+      <div class="dark:bg-slate-800 container border rounded-lg shadow-lg p-10 mx-auto mt-20 columns-3 relative">
+        <div class="w-10 h-10 bg-pink-200 rounded-full flex absolute -top-5 left-1/2 -translate-x-1/2"><span class="m-auto text-xl">📌</span></div>
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400" alt="image" class="mb-4">
+      </div>
+    </div>
+
+    <hr class="my-24 border-t-4"/>
+
+    <div class="container p-6 mx-auto font-inter max-w-screen-lg">
+      <img src="img/pic3.png" alt="poster" class="rounded-xl border shadow-2xl">
+      <h2 class="dark:text-slate-300 mt-6 text-2xl font-bold text-slate-600">Selamat Datang Di HY.NEEDLE STUDIO</h2>
+      <p class="dark:text-slate-300 mt-2 text-slate-500 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, vitae non doloribus labore saepe ullam ipsum dolor minus porro voluptatem, quibusdam laborum quia et explicabo ipsam reprehenderit repudiandae quaerat placeat, doloremque necessitatibus aliquid. Dolore quos voluptates libero repellat doloribus nobis.</p>
+      <div class="mt-4">
+        <a href="http://shopee.co.id/hayalintang" class="inline-block px-4 py-2 bg-orange-500 rounded-full text-white shadow-xl hover:bg-orange-300 hover:text-orange-600">Lets Shopping!</a>
+      </div>
+    </div>
+
+    <div class="mb-96"></div>
+
+    <script>
+      const checkbox = document.querySelector('#toggle');
+      const html = document.querySelector('html');
+
+      checkbox.addEventListener('click', function() {
+        checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark');
+      })
+    </script>
+</body>
+</html>
